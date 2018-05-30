@@ -29,9 +29,9 @@ Mozilla already has [vendor specific implementation](https://firefox-source-docs
 let langs = getLanguageDisplayNames(["pl"], ["fr", "de", "en"]);
 langs === ["Francuski", "Niemiecki", "Angielski"];
 
-let regs = getLanguageDisplayNames(["pl"], ["US", "CA", "MX"]);
+let regs = getRegionDisplayNames(["pl"], ["US", "CA", "MX"]);
 regs === ["Stany Zjednoczone", "Kanada", "Meksyk"];
 
-let locs = getLanguageDisplayNames(["pl"], ["sr-RU", "es-MX", "fr-CA"]);
+let locs = getLocaleDisplayNames(["pl"], ["sr-RU", "es-MX", "fr-CA"]);
 locs === ["Serbski (Rosja)", "Hiszpański (Meksyk)", "Francuski (Kanada)"];
 ```
