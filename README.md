@@ -26,12 +26,12 @@ Mozilla already has [vendor specific implementation](https://firefox-source-docs
 ### Usage
 
 ```js
-let langs = getLanguageDisplayNames(["pl"], ["fr", "de", "en", "sr-Latn-XK"]);
+let langs = Intl.getLanguageDisplayNames(["pl"], ["fr", "de", "en", "sr-Latn-XK"]);
 langs === ["Francuski", "Niemiecki", "Angielski", "Serbski"];
 
-let regs = getRegionDisplayNames(["pl"], ["US", "CA", "MX"]);
+let regs = Intl.getRegionDisplayNames(["pl"], ["US", "CA", "MX"]);
 regs === ["Stany Zjednoczone", "Kanada", "Meksyk"];
 
-let locs = getLocaleDisplayNames(["pl"], ["sr-RU", "es-MX", "fr-CA", "sr-Latn-XK"]);
+let locs = Intl.getLocaleDisplayNames(["pl"], ["sr-RU", "es-MX", "fr-CA", "sr-Latn-XK"]);
 locs === ["Serbski (Rosja)", "Hiszpański (Meksyk)", "Francuski (Kanada)", "Serbski (Łacińskie, Kosowo)"];
 ```
